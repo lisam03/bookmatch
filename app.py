@@ -81,7 +81,7 @@ model = load_model()
 books = model.books
 
 st.markdown(
-    '<div class="bm-hero"><h1>📚 BookMatch</h1>'
+    '<div class="bm-hero"><h1>BookMatch</h1>'
     '<p>Оберіть книгу, яка вам сподобалась, — і ми підберемо, що почитати далі.</p></div>',
     unsafe_allow_html=True,
 )
@@ -100,7 +100,7 @@ with st.sidebar:
     st.caption(f"База: {model.info['n_books']:,} книг · {model.info['n_users']:,} читачів · "
                f"{model.info['n_ratings']:,} оцінок (Book-Crossing)")
 
-tab_rec, tab_pop, tab_about = st.tabs(["🔎 Підібрати книгу", "🔥 Популярне", "ℹ️ Як це працює"])
+tab_rec, tab_pop, tab_about = st.tabs(["Підібрати книгу", "Популярне", "Як це працює"])
 
 # --- Вкладка 1: рекомендації за прочитаними книгами ---
 with tab_rec:
